@@ -27,4 +27,14 @@ public class TodoService {
         todo.setTodoStatus(TodoStatus.NONE);
         todoRepo.save(todo);
     }
+
+    public void changeStatus(Long id) {
+        Todo todo = todoRepo.getReferenceById(id);
+        todo.setTodoStatus(TodoStatus.DONE);
+        todoRepo.save(todo);
+    }
+
+    public void deleteTodo(Long id) {
+        todoRepo.deleteById(id);
+    }
 }
