@@ -1,5 +1,5 @@
 # Use a slim Java image
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-jammy
 # Set working directory
 WORKDIR /app
 # Copy the built JAR (ensure your build tool places it here)
