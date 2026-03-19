@@ -18,7 +18,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Todo {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
     String text;
     TodoStatus todoStatus;
